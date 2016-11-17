@@ -29,5 +29,9 @@ public class MathProvider {
 	{
 		return (firstNumber * secondNumber);
 	}
+	public int Divide(int firstNumber, int secondNumber)
+	{
+		return (firstNumber / secondNumber);
+	}
 
 }
