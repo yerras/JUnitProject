@@ -7,19 +7,22 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumTest {
 	
-	//System.setProperty("webdriver.gecko.driver", "C:\\Users\\yerras\\Downloads\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 	
-	private static FirefoxDriver driver;
+	private static WebDriver driver;
 	WebElement element;
 	
 	
 	@BeforeClass
 	public static void openBrowser(){
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\yerras\\Downloads\\geckodriver-v0.11.1-win64\\geckodriver.exe");
+		
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
@@ -27,7 +30,7 @@ public class SeleniumTest {
 	@Test
 	
 	public void validateUserCredentials(){
-		System.out.println("Startinng Test "+ new Object(){}.getClass().getEnclosingMethod().getName());
+		System.out.println("Starting Test "+ new Object(){}.getClass().getEnclosingMethod().getName());
 		driver.get("http://www.store.demoqa.com");
 		driver.findElement(By.xpath(".//*[@id='account']/a")).click();
 		driver.findElement(By.id("log")).sendKeys("testuser");

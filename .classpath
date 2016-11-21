@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="C:/Users/yerras/Downloads/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/yerras/Downloads/selenium-java-3.0.1.zip"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/yerras/Downloads/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yerras/Downloads/selenium-server-standalone-3.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
